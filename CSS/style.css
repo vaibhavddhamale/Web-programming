@@ -1,0 +1,38 @@
+
+body
+{
+    background-color: lightblue;
+    vertical-align: middle;
+    /* background-image: url(rohitAkurdekar.png); */
+    background-repeat: no-repeat;
+}
+table,th,td
+{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+div p
+{
+    text-align: right;    
+}
+.Head
+{
+    background-color: red;
+    color: white;
+}
+footer
+{
+    text-decoration: wavy;
+}
+ul
+{
+    background-color: yellow;
+    border: 5px dotted red;
+}
+
+p
+{
+    text-indent: 40pt;
+    text-align: justify;
+}

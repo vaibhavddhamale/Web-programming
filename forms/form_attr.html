@@ -1,0 +1,40 @@
+<!-- Forms attribute
+        method = "get/post"    
+        action = URL to server side component
+-->
+<html>
+    <head>
+        <title>
+            Forms attribute
+        </title>
+    </head>
+    <body>
+        
+        <h1>Welcome to login page</h1><hr>
+        <form style="font-size: 20pt;">
+            <!-- Input type-text -->
+            Username: <input type="text" 
+                            autofocus
+                            required
+                            placeholder="Enter username">
+<br><br>    Password: <input type="password" 
+                            required
+                            placeholder="Enter password">
+<br><br>
+            <input type="text" name="product" 
+                    pattern="[0-9][A-Za-z]{3}"
+                    title="Single digit followed by atleast 3 char">
+
+<br><br>
+            <!-- Input type-misc -->
+
+
+
+            <!-- Input type-Button -->
+            <input type="submit" value="Login"> &nbsp;&nbsp;
+            <input type="reset" >
+        </form>
+
+        &copy; Rohit Akurdekar
+    </body>
+</html>
