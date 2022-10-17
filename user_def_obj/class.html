@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- class example -->
+<html>
+    <head><title>Class example</title>
+    <style>body{font-size: xx-large;}</style></head>
+    <body>
+        <script>
+            class myClass{
+                constructor(rcv_prn,rcv_name){
+                    this.prn = rcv_prn
+                    this.name = rcv_name
+                }
+                displayDetails(){
+                    document.write("<br>",this.prn,"   ",this.name)
+                }
+            }
+            var class_obj = new myClass(1001,"Rohit");
+
+            var Saurav = new myClass(1002,"Saurav");
+            
+            var class_obj2 = new myClass(1003,"JhangadGutta");
+            
+            class_obj.displayDetails()
+            Saurav.displayDetails()
+            class_obj2.displayDetails()
+
+        </script>
+    </body>
+</html>

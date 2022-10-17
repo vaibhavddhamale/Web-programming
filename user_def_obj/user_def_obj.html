@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head><title>User defined objects</title>
+    <style>body{font-size: xx-large;}</style></head>
+    <body>
+        
+        <script>
+        /*
+            var Stud = {prn:1,name:"Rohit"}
+                        // obj.property
+            document.write("<br>",Stud.prn," ",Stud.name)      // reading value of property
+
+            Stud.name = "Amit"                           // writing value of property
+            document.write("<br>",Stud.prn," ",Stud.name)      // reading value of property
+
+        */
+
+    // JavaScript Object Notation - JSON
+        var person = {
+            pName:"Rohit",                              // string
+            pAge:25,                                    // number
+            pVaccinated:true,                           // boolean
+            pHobbies:["Swimming","Cooking"],            // Array
+            pMobNumber:9604268633,                      // number
+            pAddr:{city:"PUNE",state:"Maharashtra"},     // object
+            
+            // function expression
+            dispData: function(){
+                console.log(this.pName, this.pAge,this.pVaccinated,
+                this.pHobbies,this.pMobNumber,this.pAddr)
+            }
+        }
+        // reading value
+        console.log(person.pName,person.pAge,person.pHobbies,person.pAddr.city)
+        
+        // changing/ seting/ updating value
+        person.pAge = 26
+
+        // reading value
+        console.log(person.pName,person.pAge,person.pHobbies,person.pAddr.city)
+
+        // calling func
+        person.dispData()
+
+        </script>
+    </body>
+</html>

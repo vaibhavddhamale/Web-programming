@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<body>
+    <h1>Welcome to JS- string object</h1>
+    <script>
+        var s1 = "Hello World"
+        var s2 = new String("Hello World")          // Not used regularly
+// String Built-In Method                           // Output-> Reason
+        console.log(s1.length)              // 11
+        console.log(s1.charAt(4))           // o
+        console.log(s1.indexOf("W"))        //6
+        console.log(s1.indexOf("orl"))      //7
+        console.log(s1.toLowerCase())       //hello world
+        console.log(s1.toUpperCase())       //HELLO WORLD
+
+        console.log(s1.charCodeAt(4))       //111-> ascii code of 'o'
+
+        s1 = s2.concat(" Welcome to Jungle")    //Hello World Welcome to Jungle
+        console.log(s1)
+        var arr = s1.split(" ")       //Array(5) [ "Hello", "World", "Welcome", "to", "Jungle" ]
+        console.log(arr)
+
+// Math Built-In func   
+        console.log(Math.abs(100))              //100
+        console.log(Math.abs(-100))             //100
+
+        console.log(Math.max(12,5,15))          //15
+        console.log(Math.min(12,5,15))          //5
+
+        console.log(Math.PI)                    //3.141592653589793
+        console.log(Math.round(Math.PI))        //3
+        console.log(Math.round(2.7))            //3
+        console.log(Math.round(2.4))            //2
+
+        console.log(Math.ceil(2.4))             // 3
+        console.log(Math.floor(2.7))            // 2
+        console.log(Math.ceil(-2.4))            //-2
+        console.log(Math.floor(-2.7))           //-3
+
+// Date builtin
+        var date1 = new Date()  // Current date abd time of system
+        console.log(date1)      //Date Mon Oct 17 2022 10:07:00 GMT+0530 (India Standard Time)
+
+        console.log(date1.setDate(5))       //
+        console.log(date1.getDate())        //5
+
+        // var date2 = new Date(845635514000)  
+        // console.log(date2)
+
+// Array
+        
+    </script>
+</body>
