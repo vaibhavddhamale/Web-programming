@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+
+</HEAD>
+<BODY>
+    <script>
+        var n1 = parseInt(prompt("Enter principal"))
+        var n2 = parseFloat(prompt("Enter Rate of interest"))
+        var n3 = parseInt(prompt("Enter number of years"))
+        document.write("------------------------------------------------------" + "<br>")
+        document.write("*****Calculate Compound Interest*****" + "<br>")
+        document.write("------------------------------------------------------" + "<br>")
+        document.write("Principal amount is " + n1 + "<br>")
+        document.write("Rate of interest is " + n2 + "<br>")
+        document.write("Number of years is " + n3 + "<br>")
+        document.write("Compound interest is " + [n1 * ((1 + n2 / 100) ** n3) - n1])
+    </script>
+
+
+</BODY>
+</HTML>
