@@ -1,0 +1,28 @@
+   <!--We have an array that holds many web site names.
+     Eg, www.google.com, www.msn.com, www.amazon.co.in, in.answers.yahoo.com, en.m.wikipedia.com, codehs.gitbooks.io, www.coderanch.com  etc.
+     Search for all sites that begin with “www” and display the total number of such sites.
+      Eg for above eg, total is 4-->
+   <html>
+          <body>
+               <script>
+                    function myFun(){
+                         let arr = [
+                              "www.google.com",
+                              "www.msn.com",
+                              "www.amazon.co.in",
+                              "in.answers.yahoo.com", 
+                              "en.m.wikipedia.com",
+                              "codehs.gitbooks.io",
+                              "www.coderanch.com"
+                         ];
+                         let count = arr.reduce((c,i)=> {
+                              i.split(".")[0]==='www' && c++ ;
+                              return c;
+                         },0);
+                         document.write("the total number of such sites that begin with “www” : ",count);
+                         }
+
+                    myFun();
+               </script>
+          </body>
+      </html>
